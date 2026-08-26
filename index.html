@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Vida Sabouri — Web & Digital Designer and Computer Science student based in Melbourne, Australia.">
+
+    <meta name="author" content="Vida Sabouri">
+
+    <title>Vida Sabouri | Web & Digital Designer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .modal-media {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .media-item {
+            margin: 0;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: var(--surface-soft);
+        }
+
+        .media-item img,
+        .media-item video {
+            display: block;
+            width: 100%;
+            max-height: 420px;
+            object-fit: contain;
+            background: #111;
+        }
+
+        .media-item figcaption {
+            padding: 10px 12px;
+            color: var(--text-light);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .certificate-card-media {
+            align-items: flex-start;
+        }
+
+        .certificate-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .certificate-link:hover {
+            text-decoration: underline;
+        }
+
+        .media-empty {
+            padding: 16px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            color: var(--text-light);
+            background: var(--surface-soft);
+        }
+
+        @media (max-width: 700px) {
+            .modal-media {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            Vida<span>.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#services">What I Do</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#education">Education</a></li>
+
+            <li><a href="#certificates">Certificates</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+      <p class="eyebrow">
+          Hello, I'm
+      </p>
+
+      <h1>
+          Vida <span>Sabouri</span>
+      </h1>
+
+      <h2>
+          Web & Digital Designer
+      </h2>
+
+      <p class="hero-description">
+          I'm a Computer Science student passionate about
+          web and digital design, creative technology,
+          video editing, coding, gaming and visual creativity.
+      </p>
+
+      <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">
+              View My Work
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+              Contact Me
+          </a>
+
+      </div>
+
+      <div class="hero-location">
+          <span>📍</span>
+          Melbourne, Victoria, Australia
+      </div>
+
+  </div>
+
+
+  <div class="hero-visual">
+
+      <div class="portrait-orbit orbit-one"></div>
+      <div class="portrait-orbit orbit-two"></div>
+
+      <div class="portrait-card">
+
+          <div class="portrait-topline">
+              <span>VIDA / CREATIVE TECH</span>
+              <span class="portrait-dot"></span>
+          </div>
+
+          <!-- REAL AVATAR IMAGE -->
+
+          <div class="portrait-art">
+
+              <img
+                  src="assets/avatar/vida-avatar.jpg"
+                  alt="Stylized computer science student avatar"
+                  class="vida-avatar"
+              >
+
+              <span class="spark spark-a">✦</span>
+              <span class="spark spark-b">✧</span>
+              <span class="spark spark-c">✦</span>
+
+          </div>
+
+          <div class="portrait-caption">
+              <strong>Vida Sabouri</strong>
+              <span>Web • Design • Creative Technology</span>
+          </div>
+
+      </div>
+
+
+      <div class="floating-card card-one">
+          ✦ Design
+      </div>
+
+      <div class="floating-card card-two">
+          &lt;/&gt; Code
+      </div>
+
+      <div class="floating-card card-three">
+          ♡ Create
+      </div>
+
+  </div>
+
+</section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="section about-section" id="about">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                About Me
+            </p>
+
+            <h2>
+                Technology meets <span>creativity.</span>
+            </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I'm a Computer Science student at the
+                    University of the People, building practical
+                    skills across technology and creative fields.
+                </p>
+
+                <p>
+                    I'm especially interested in web design,
+                    digital design, video editing, animation,
+                    coding and creative technology.
+                </p>
+
+                <p>
+                    I enjoy learning new tools, experimenting
+                    with ideas and improving my skills through
+                    projects and practical work.
+                </p>
+
+            </div>
+
+            <div class="about-highlight">
+
+                <div class="highlight-number">
+                    2027
+                </div>
+
+                <div>
+                    <strong>Expected Graduation</strong>
+
+                    <p>
+                        Bachelor of Science in Computer Science —
+                        April 2027
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="section" id="services">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                What I Do
+            </p>
+
+            <h2>
+                Creative skills with a
+                <span>technical foundation.</span>
+            </h2>
+
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Web & Digital Design
+                </h3>
+
+                <p>
+                    Creating clean, modern and user-friendly
+                    digital experiences using web technologies
+                    and design principles.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Graphic Design
+                </h3>
+
+                <p>
+                    Designing brochures, business cards,
+                    banners, posters, event designs and
+                    other visual content.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ▶
+                </div>
+
+                <h3>
+                    Video & Animation
+                </h3>
+
+                <p>
+                    Editing video content with attention to
+                    pacing, transitions, composition and
+                    storytelling, with coursework exposure
+                    to animation.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>
+                    Programming
+                </h3>
+
+                <p>
+                    Developing programming projects while
+                    improving skills in Java, Python,
+                    JavaScript and web technologies.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+
+    <section class="section skills-section" id="skills">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                My Skills
+            </p>
+
+            <h2>
+                Tools I use to <span>create.</span>
+            </h2>
+
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-category">
+
+                <h3>
+                    Programming & Web
+                </h3>
+
+                <div class="skill-list">
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>MySQL</span>
+                    <span>Android Development</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Design & Creative
+                </h3>
+
+                <div class="skill-list">
+                    <span>Photoshop</span>
+                    <span>Premiere Pro</span>
+                    <span>After Effects</span>
+                    <span>Canva</span>
+                    <span>Graphic Design</span>
+                    <span>Photo Editing</span>
+                    <span>Video Editing</span>
+                    <span>Animation</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Productivity
+                </h3>
+
+                <div class="skill-list">
+                    <span>Microsoft Word</span>
+                    <span>Excel</span>
+                    <span>PowerPoint</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-category learning">
+
+                <h3>
+                    Currently Learning
+                </h3>
+
+                <div class="skill-list">
+                    <span>Figma</span>
+                    <span>UI/UX Design</span>
+                    <span>Git & GitHub</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section class="section" id="projects">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                Selected Work
+            </p>
+
+            <h2>
+                Projects & <span>creative work.</span>
+            </h2>
+
+            <p class="section-description">
+                A curated selection of real web, Android,
+                information-retrieval, computer-graphics
+                and creative work. Click any card to see
+                the details and available media.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <!-- GREEN TEA -->
+
+            <article
+                class="project-card project-clickable"
+                data-project="website"
+                tabindex="0"
+                role="button"
+                aria-label="Open Green Tea website project">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-preview preview-web">
+                    <span>WEB</span>
+                    <b>Green Tea</b>
+                    <i>&lt;/&gt;</i>
+                </div>
+
+                <p class="project-type">
+                    WEB DESIGN
+                </p>
+
+                <h3>
+                    Green Tea Website
+                </h3>
+
+                <p>
+                    An independently designed and developed
+                    website presented as a polished
+                    web-design project.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Web Design</span>
+                </div>
+
+                <span class="project-status">
+                    Independent Project • Click to view
+                </span>
+
+            </article>
+
+
+            <!-- VIDAFIT -->
+
+            <article
+                class="project-card project-clickable"
+                data-project="vidafit"
+                tabindex="0"
+                role="button"
+                aria-label="Open VidaFit Android project">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-preview preview-app">
+                    <span>♡</span>
+                    <b>VidaFit</b>
+                    <small>Fitness Companion</small>
+                </div>
+
+                <p class="project-type">
+                    ANDROID DEVELOPMENT
+                </p>
+
+                <h3>
+                    VidaFit Android App
+                </h3>
+
+                <p>
+                    A fitness companion app with a dashboard
+                    for BMI, steps, water and exercise information,
+                    built and tested on an Android phone.
+                </p>
+
+                <div class="project-tags">
+                    <span>Android</span>
+                    <span>Java</span>
+                    <span>UI</span>
+                    <span>Testing</span>
+                </div>
+
+                <span class="project-status">
+                    University Project • Click to view
+                </span>
+
+            </article>
+
+
+            <!-- DESIGN -->
+
+            <article
+                class="project-card project-clickable"
+                data-project="design"
+                tabindex="0"
+                role="button"
+                aria-label="Open graphic design collection">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-preview preview-design">
+                    <span>DESIGN</span>
+                    <b>Print • Digital</b>
+                    <i>✦</i>
+                </div>
+
+                <p class="project-type">
+                    GRAPHIC DESIGN
+                </p>
+
+                <h3>
+                    Graphic Design Collection
+                </h3>
+
+                <p>
+                    A curated collection of brochures,
+                    business cards, banners, posters,
+                    cards, photo edits and digital design work.
+                </p>
+
+                <div class="project-tags">
+                    <span>Photoshop</span>
+                    <span>Canva</span>
+                    <span>Layout</span>
+                    <span>Typography</span>
+                </div>
+
+                <span class="project-status">
+                    Creative Portfolio • Click to view
+                </span>
+
+            </article>
+
+
+            <!-- VIDEO -->
+
+            <article
+                class="project-card project-clickable"
+                data-project="video"
+                tabindex="0"
+                role="button"
+                aria-label="Open video editing collection">
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <div class="project-preview preview-video">
+                    <span>▶</span>
+                    <b>EDIT / CUT / STORY</b>
+                    <small>Car • Watch</small>
+                </div>
+
+                <p class="project-type">
+                    VIDEO EDITING
+                </p>
+
+                <h3>
+                    Video Editing Collection
+                </h3>
+
+                <p>
+                    Selected editing work demonstrating
+                    pacing, transitions, visual composition
+                    and product-focused editing.
+                </p>
+
+                <div class="project-tags">
+                    <span>Premiere Pro</span>
+                    <span>After Effects</span>
+                    <span>Editing</span>
+                </div>
+
+                <span class="project-status">
+                    Creative Portfolio • Click to view
+                </span>
+
+            </article>
+
+
+            <!-- INFORMATION RETRIEVAL -->
+
+            <article
+                class="project-card project-clickable"
+                data-project="ir"
+                tabindex="0"
+                role="button"
+                aria-label="Open information retrieval project">
+
+                <div class="project-number">
+                    05
+                </div>
+
+                <div class="project-preview preview-ir">
+                    <span>IR</span>
+                    <b>E-Commerce Search</b>
+                    <small>Performance + Fairness</small>
+                </div>
+
+                <p class="project-type">
+                    INFORMATION RETRIEVAL
+                </p>
+
+                <h3>
+                    E-Commerce Information Retrieval
+                </h3>
+
+                <p>
+                    A group project evaluating the performance
+                    and fairness of an e-commerce information
+                    retrieval system.
+                </p>
+
+                <div class="project-tags">
+                    <span>IR</span>
+                    <span>E-Commerce</span>
+                    <span>Fairness</span>
+                    <span>Evaluation</span>
+                </div>
+
+                <span class="project-status">
+                    Group Project • Click to view
+                </span>
+
+            </article>
+
+
+            <!-- COMPUTER GRAPHICS -->
+
+            <article
+                class="project-card project-clickable"
+                data-project="graphics"
+                tabindex="0"
+                role="button"
+                aria-label="Open computer graphics coursework">
+
+                <div class="project-number">
+                    06
+                </div>
+
+                <div class="project-preview preview-graphics">
+                    <span>3D</span>
+                    <b>Computer Graphics</b>
+                    <small>2D • 3D • Animation</small>
+                </div>
+
+                <p class="project-type">
+                    COMPUTER GRAPHICS
+                </p>
+
+                <h3>
+                    Computer Graphics Coursework
+                </h3>
+
+                <p>
+                    Coursework covering 2D and 3D graphics,
+                    animation concepts, rendering and
+                    visual-computing fundamentals.
+                </p>
+
+                <div class="project-tags">
+                    <span>2D</span>
+                    <span>3D</span>
+                    <span>Animation</span>
+                    <span>Rendering</span>
+                </div>
+
+                <span class="project-status">
+                    Coursework • Click to view
+                </span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT MODAL
+    ========================== -->
+
+    <div
+        class="project-modal"
+        id="projectModal"
+        aria-hidden="true">
+
+        <div
+            class="modal-backdrop"
+            data-close-modal>
+        </div>
+
+        <div
+            class="modal-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close project details">
+                ×
+            </button>
+
+            <p
+                class="modal-kicker"
+                id="modalKicker">
+            </p>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <div
+                class="modal-media"
+                id="modalMedia"
+                aria-live="polite">
+            </div>
+
+            <div class="modal-columns">
+
+                <div>
+
+                    <h3>
+                        What I worked on
+                    </h3>
+
+                    <ul id="modalBullets"></ul>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Tools / skills
+                    </h3>
+
+                    <div
+                        class="modal-tags"
+                        id="modalTags">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div
+                class="modal-note"
+                id="modalNote">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
+    <section
+        class="section education-section"
+        id="education">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                Education
+            </p>
+
+            <h2>
+                My academic <span>journey.</span>
+            </h2>
+
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <p class="education-status">
+                    CURRENTLY STUDYING
+                </p>
+
+                <h3>
+                    Bachelor of Science in Computer Science
+                </h3>
+
+                <h4>
+                    University of the People
+                </h4>
+
+                <p>
+                    Studying since September 2024 with
+                    expected graduation in April 2027.
+                </p>
+
+            </div>
+
+            <div class="education-year">
+                2027
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CERTIFICATES
+    ========================== -->
+
+    <section
+        class="section certificates-section"
+        id="certificates">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                Certificates & Training
+            </p>
+
+            <h2>
+                Always <span>learning.</span>
+            </h2>
+
+            <p class="section-description">
+                Selected training and certificates,
+                presented professionally with private
+                identifying details kept out of the
+                public view.
+            </p>
+
+        </div>
+
+
+        <div class="certificate-grid">
+
+
+            <article class="certificate-card certificate-card-media">
+
+                <div class="certificate-icon">
+                    📜
+                </div>
+
+                <div>
+
+                    <h3>
+                        Information Technology Program
+                    </h3>
+
+                    <p>
+                        Information Technology training
+                        completed in October 2023.
+                    </p>
+
+                    <a
+                        class="certificate-link"
+                        href="assets/certificates/information-technology.jpeg"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Certificate ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="certificate-card certificate-card-media">
+
+                <div class="certificate-icon">
+                    🎬
+                </div>
+
+                <div>
+
+                    <h3>
+                        Adobe Premiere Pro
+                    </h3>
+
+                    <p>
+                        Comprehensive Adobe Premiere Pro
+                        course, awarded January 2024.
+                    </p>
+
+                    <a
+                        class="certificate-link"
+                        href="assets/certificates/adobe-premiere-pro.jpeg"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Certificate ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="certificate-card certificate-card-media">
+
+                <div class="certificate-icon">
+                    📚
+                </div>
+
+                <div>
+
+                    <h3>
+                        English Language Certificate
+                    </h3>
+
+                    <p>
+                        Comprehensive English Language
+                        Course, awarded May 2024.
+                    </p>
+
+                    <a
+                        class="certificate-link"
+                        href="assets/certificates/english-language.jpeg"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View Certificate ↗
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LANGUAGES
+    ========================== -->
+
+    <section class="section languages-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                Languages
+            </p>
+
+            <h2>
+                Communication across <span>cultures.</span>
+            </h2>
+
+        </div>
+
+        <div class="language-grid">
+
+            <div class="language-card">
+                <strong>Dari</strong>
+                <span>Fluent</span>
+            </div>
+
+            <div class="language-card">
+                <strong>Persian (Farsi)</strong>
+                <span>Fluent</span>
+            </div>
+
+            <div class="language-card">
+                <strong>English</strong>
+                <span>Fluent</span>
+            </div>
+
+            <div class="language-card">
+                <strong>Urdu</strong>
+                <span>Fluent</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section
+        class="contact-section"
+        id="contact">
+
+        <div class="contact-content">
+
+            <p class="section-label">
+                Contact
+            </p>
+
+            <h2>
+                Let's create something
+                <span>great.</span>
+            </h2>
+
+            <p>
+                I'm interested in opportunities where I can
+                continue learning, contribute my skills and
+                grow in web design, digital design, creative
+                technology and related fields.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="mailto:Vida.sabouri3@gmail.com"
+                    class="btn btn-primary">
+                    Email Me
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/vida-sabouri3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-secondary">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <a
+                href="#home"
+                class="footer-logo">
+                Vida<span>.</span>
+            </a>
+
+            <p>
+                Web & Digital Designer
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Vida Sabouri. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
